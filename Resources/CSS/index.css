@@ -89,7 +89,6 @@ header {
 .nav_links:hover {
     background-color: white;
     color: black;
-    border-radius: 1rem;
     transition: color 200ms linear;
     transition: background-color 200ms linear;
 }
@@ -172,7 +171,7 @@ main{
 
 /* EPK banner on main page */
 .index_epk_banner {
-    background-image: url(/Resources/Photos/JoelConcert.JPG);
+    background-image: url('/Resources/Photos/JoelConcert.JPG');
     height: 640px;
     margin: 0;
     display: flex;
@@ -193,9 +192,7 @@ main{
 }
 
 button {
-    border: black 1px solid;
-    background-color: grey;
-    border-radius: 1rem;
+    background-color: black;
     padding: .75rem 1rem;
     width: 12rem;
     height: 4rem;
@@ -217,21 +214,24 @@ button:hover {
 .index_music_con {
     height: 640px;
     display: flex;
-    background-image: url(/Resources/Photos/joelOnStage.jpeg);
-    background-size: cover;
+    background-image: url('/Resources/Photos/joelOnStage.jpeg');
+    background-size: 120%;
+    background-position-x: 8rem;
+    background-position-y: -6rem;
     justify-content: flex-start;
     align-items: center;
     color: white;
     opacity: 0.95;
     font-size: 3rem;
     text-align: center;
+    
 }
 
 .music_con {
     position: relative;
     line-height: .75rem;
     width: 375px;
-    left: 8rem;
+    left: 10rem;
     bottom: 2rem;
 }
 
@@ -239,3 +239,48 @@ button:hover {
     height: 5rem;
     width: 300px;
 }
+
+/* contact banner on index */
+.index_contact_con {
+    background-image: url('/Resources/Photos/joelSiitingInSun.jpeg');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    opacity: .95;
+    background-position-x: -21rem;
+    background-position-y: -6rem ;
+}
+
+.con_text {
+    width: 275px;
+    margin: auto 9.5rem;
+    text-align: center;
+}
+
+.con_text p {
+    font-size: 1.5rem;
+}
+
+.con_text h3 {
+    margin-bottom: 1rem;
+}
+
+.contact_button {
+    height: 5rem;
+    width: 16rem;
+    margin: 6px auto
+}
+
+/* footer */
+.footer_con {
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
