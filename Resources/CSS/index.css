@@ -10,8 +10,7 @@ html {
 
 body {
     margin: 0;
-    max-width: 1800;
-    
+    max-width: 1800px;
     background-color: white;
 }
 
@@ -115,7 +114,8 @@ main{
     
 }
 
-.banner_container h2, p {
+.banner_container h2 {
+    font-size: 6rem;
     position: relative;
     top: 200px;
     right: 290px;
@@ -123,10 +123,59 @@ main{
     opacity: 1;
 }
 
-.banner_container h2 {
-    font-size: 6rem;
-}
-
 .banner_container p {
     font-size: 2rem;
+    position: relative;
+    top: 200px;
+    right: 290px;
+    margin: 0;
+    opacity: 1;
 }
+
+/* Article */
+
+.article_container {
+    display: block;
+}
+
+/* about banner on main page */
+.index_about_con {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 640px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/Resources/Photos/joelHoldingGuitar.JPG');
+    color: white;
+    
+}
+
+.index_about_text {
+    text-align: center;
+    width: 400px;
+    margin: 0 8rem;
+    line-height: 1.5rem;
+}
+
+.index_about_text h3 {
+    font-size: 4rem;
+}
+
+.index_about_text p {
+    padding-top: 1rem;
+}
+
+/* EPK banner on main page */
+.index_epk_banner {
+    background-image: url();
+}
+
+button {
+    border: black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+}
+
