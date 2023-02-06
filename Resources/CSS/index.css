@@ -4,17 +4,24 @@
 
 html {
     font-family: sans-serif;
+    height: 100%;
    
 }
 
 body {
     margin: 0;
-    width: 1280px;
+    max-width: 1800;
+    
+    background-color: white;
 }
 
 
 
+/* header */
 
+header {
+    display: block;
+}
 
 /* navbar */
 .navbar {
@@ -24,16 +31,16 @@ body {
     margin: 0;
     width: 100%;
     position: fixed;
+    top: 0;
     resize: both;
-    
+    z-index: 2;
 }
 
 .navbar_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
-    
+    height: 4.25rem;
 }
 
 .link_list {
@@ -55,7 +62,7 @@ body {
 
 }
 
-h1 {
+.navbar h1 {
     flex-shrink: 1;
     position: relative;
     right: 4rem;
@@ -89,3 +96,37 @@ h1 {
 }
 
 /* Main */
+main{
+    padding-top: 4.25rem;
+}
+
+/* banner */
+
+.banner_container {
+    width: 100%;
+    height: 640px;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/61ff0a13023f7d5024581c3e/4d955cbb-79ac-4df4-b345-c0f3376235d8/IMG_1568.JPG');
+    background-repeat: no-repeat;
+    padding: 0;
+    color: white;
+    display: block;
+    opacity: 0.8;
+    text-align: center;
+    
+}
+
+.banner_container h2, p {
+    position: relative;
+    top: 200px;
+    right: 290px;
+    margin: 0;
+    opacity: 1;
+}
+
+.banner_container h2 {
+    font-size: 6rem;
+}
+
+.banner_container p {
+    font-size: 2rem;
+}
