@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+   
+}
+
+body {
+    margin: 0;
+    max-width: 1800px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+
+/* header */
+
+header {
+    display: block;
+}
+
+/* navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    resize: both;
+    z-index: 2;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.25rem;
+}
+
+.link_list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 1.5rem;
+    flex-shrink: 1;
+}
+
+.link, .nav_links {
+    padding: 5px 7px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+
+}
+
+.navbar h1 {
+    flex-shrink: 1;
+    position: relative;
+    right: 4rem;
+}
+
+.joel {
+    color: white;
+    text-decoration: none;
+}
+
+.link_icons {
+    margin: 0 1.5rem; 
+    flex-shrink: 1;
+}
+
+.icon_link {
+    padding: .5rem;
+}
+
+.icon {
+    height: 1.25rem;
+}
+
+/* navbar hovers */
+.nav_links:hover {
+    background-color: white;
+    color: black;
+    transition: color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+/* Main */
+main{
+    padding-top: 4.25rem;
+}
+
+/* banner */
+
+.banner_container {
+    width: 100%;
+    height: 640px;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/61ff0a13023f7d5024581c3e/4d955cbb-79ac-4df4-b345-c0f3376235d8/IMG_1568.JPG');
+    background-repeat: no-repeat;
+    padding: 0;
+    color: white;
+    display: block;
+    opacity: 0.95;
+    text-align: center;
+    
+}
+
+.banner_container h2 {
+    font-size: 6rem;
+    position: relative;
+    top: 200px;
+    right: 290px;
+    margin: 0;
+    opacity: 1;
+}
+
+.banner_container p {
+    font-size: 2rem;
+    position: relative;
+    top: 200px;
+    right: 290px;
+    margin: 0;
+    opacity: 1;
+}
+
+/* Article */
+
+.article_container {
+    display: block;
+}
+
+/* about banner on main page */
+.index_about_con {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 640px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/Resources/Photos/joelHoldingGuitar.JPG');
+    color: white;
+    margin: 0;
+    padding: 0;
+    opacity: 0.95;
+}
+
+.index_about_text {
+    text-align: center;
+    width: 400px;
+    position: relative;
+    right: 8rem;
+    line-height: 1.5rem;
+}
+
+.index_about_text h3 {
+    font-size: 4rem;
+}
+
+.index_about_text p {
+    padding-top: 1rem;
+}
+
+/* EPK banner on main page */
+.index_epk_banner {
+    background-image: url('/Resources/Photos/JoelConcert.JPG');
+    height: 640px;
+    margin: 0;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    flex-wrap: wrap-reverse;
+    opacity: 0.95;
+}
+
+.index_epk_con {
+    width: 430px;
+    text-align: center;
+    position: relative;
+    left: 8rem;
+    opacity: 1;
+}
+
+button {
+    background-color: black;
+    padding: .75rem 1rem;
+    width: 12rem;
+    height: 4rem;
+    margin-top: 1.5rem;
+    font-size: 1.75rem;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: black solid 1px;
+    transition: color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+/* music banner on index */
+.index_music_con {
+    height: 640px;
+    display: flex;
+    background-image: url('/Resources/Photos/joelOnStage.jpeg');
+    background-size: 120%;
+    background-position-x: 8rem;
+    background-position-y: -6rem;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    opacity: 0.95;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.music_con {
+    position: relative;
+    line-height: .75rem;
+    width: 375px;
+    left: 10rem;
+    bottom: 2rem;
+}
+
+.music_button {
+    height: 5rem;
+    width: 300px;
+}
+
+/* contact banner on index */
+.index_contact_con {
+    background-image: url('/Resources/Photos/joelSiitingInSun.jpeg');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    opacity: .95;
+    background-position-x: -21rem;
+    background-position-y: -6rem ;
+}
+
+.con_text {
+    width: 275px;
+    margin: auto 9.5rem;
+    text-align: center;
+}
+
+.con_text p {
+    font-size: 1.5rem;
+}
+
+.con_text h3 {
+    margin-bottom: 1rem;
+}
+
+.contact_button {
+    height: 5rem;
+    width: 16rem;
+    margin: 6px auto
+}
+
+/* footer */
+.footer_con {
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* EPK SlideShow */
+.epk_banner {
+    background-image: url('/Resources/Photos/JoelConcert.JPG');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 640px;
+    color: white;
+}
+
+.epk_banner h1 {
+    font-size: 7rem;
+    margin: auto 17rem;
+}
+
+.bio_con {
+    height: 640px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.75rem;
+}
+
+.slideshow_con {
+    background-color: black;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+
+
+.slide_con {
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+
