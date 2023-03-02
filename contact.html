@@ -7,30 +7,123 @@
     <title>Joel Guptill - Contact</title>
     <link rel="stylesheet" href="./Resources/CSS/style.css">
     <link rel="icon" href="./pngwing.com.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./app.js"></script>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar_container">
+</head> 
+<header>
+    <nav class="navbar">
+            
+        <div class="navbar_container">
+            <div class="link_con">
                 <ul class="link_list">
                     <li class="link"><a href="./index.html" class="nav_links">HOME</a></li>
                     <li class="link"><a href="./epk.html" class="nav_links">EPK</a></li>
                     <li class="link"><a href="./music.html" class="nav_links">MUSIC</a></li>
                     <li class="link"><a href="./shows.html" class="nav_links">SHOWS</a></li>
-                    <li class="link"><a href="./contact.html" class="nav_links">CONTACT</a></li>
+                    <li class="link"><a href="./contact.html" class="nav_links"><u>CONTACT</u></a></li>
                 </ul>
+            </div>
+
+            <a href="./index.html" class="joel"><h1>JOEL GUPTILL</h1></a>
+
+            <div class="mobile_menu" id="mobile_menu">
+
                 <a href="./index.html" class="joel"><h1>JOEL GUPTILL</h1></a>
+                
+                <ul class="link_list">
+                    <li class="link"><a href="./index.html" class="nav_links">HOME</a></li>
+                    <li class="link"><a href="./epk.html" class="nav_links">EPK</a></li>
+                    <li class="link"><a href="./music.html" class="nav_links">MUSIC</a></li>
+                    <li class="link"><a href="./shows.html" class="nav_links">SHOWS</a></li>
+                    <li class="link"><a href="./contact.html" class="nav_links"><u>CONTACT</u></a></li>
+                </ul>
                 <div class="link_icons">
-                    <a href="https://www.instagram.com/joelguptill/" class="icon_link"><img src="./Resources/Photos/Instagram Logo White.png" alt="Instagram icon" class="icon"></a>
-                    <a href="https://www.facebook.com/JoelGuptillMusic" class="icon_link"><img src="./Resources/Photos/Facbook Logo White.png" alt="Facebook Logo" class="icon"></a>
-                    <a href="https://open.spotify.com/artist/6IRfHVFLtWhQLsbFCLcnCJ?si=wdebKppLQwCASJ20BoI85g" class="icon_link"><img src="./Resources/Photos/Spotify Logo White.png" alt="Spotify Logo" class="icon"></a>
-                    <a href="https://music.apple.com/us/artist/joel-guptill/1438362234" class="icon_link"><img src="./Resources/Photos/Apple music Logo.png" alt="Apple Music Logo" class="icon"></a>
-                    <a href="https://www.youtube.com/channel/UCXTOQ0zJETdjyOA6Rbv3xPg?app=desktop" class="icon_link"><img src="./Resources/Photos/Youtube Logo White.png" alt="Youtube Logo" class="icon"></a>
+                    <a href="https://www.instagram.com/joelguptill/" class="icon_link" target="_blank"><img src="./Resources/Photos/Instagram Logo White.png" alt="Instagram icon" class="icon"></a>
+                    <a href="https://www.facebook.com/JoelGuptillMusic" class="icon_link" target="_blank"><img src="./Resources/Photos/Facbook Logo White.png" alt="Facebook Logo" class="icon"></a>
+                    <a href="https://open.spotify.com/artist/6IRfHVFLtWhQLsbFCLcnCJ?si=wdebKppLQwCASJ20BoI85g" class="icon_link" target="_blank"><img src="./Resources/Photos/Spotify Logo White.png" alt="Spotify Logo" class="icon"></a>
+                    <a href="https://music.apple.com/us/artist/joel-guptill/1438362234" class="icon_link" target="_blank"><img src="./Resources/Photos/Apple music Logo.png" alt="Apple Music Logo" class="icon"></a>
+                    <a href="https://www.youtube.com/channel/UCXTOQ0zJETdjyOA6Rbv3xPg?app=desktop" class="icon_link" target="_blank"><img src="./Resources/Photos/Youtube Logo White.png" alt="Youtube Logo" class="icon"></a>
                 </div>
             </div>
-        </nav>
-    </header>
+            
+            <div class="link_con">
+                <div class="link_icons">
+                    <a href="https://www.instagram.com/joelguptill/" class="icon_link" target="_blank"><img src="./Resources/Photos/Instagram Logo White.png" alt="Instagram icon" class="icon"></a>
+                    <a href="https://www.facebook.com/JoelGuptillMusic" class="icon_link" target="_blank"><img src="./Resources/Photos/Facbook Logo White.png" alt="Facebook Logo" class="icon"></a>
+                    <a href="https://open.spotify.com/artist/6IRfHVFLtWhQLsbFCLcnCJ?si=wdebKppLQwCASJ20BoI85g" class="icon_link" target="_blank"><img src="./Resources/Photos/Spotify Logo White.png" alt="Spotify Logo" class="icon"></a>
+                    <a href="https://music.apple.com/us/artist/joel-guptill/1438362234" class="icon_link" target="_blank"><img src="./Resources/Photos/Apple music Logo.png" alt="Apple Music Logo" class="icon"></a>
+                    <a href="https://www.youtube.com/channel/UCXTOQ0zJETdjyOA6Rbv3xPg?app=desktop" class="icon_link" target="_blank"><img src="./Resources/Photos/Youtube Logo White.png" alt="Youtube Logo" class="icon"></a>
+                </div>
+            </div>
+        
+            <a href="javascript:void(0);" class="menu_icon" onclick="myFunction()">
+                <img src="/Resources/Photos/icons8-hamburger-menu-24.png" alt="" class="hamburger"> 
+              </a>
+            
+        </div>
+    </nav>
+</header>
+<body>
+   <article class="contact_wrapper">
+        <div class="contact">
+            <h2>Contact</h2>
+            <h3>Email me at <u>joelguptillmusic@gmail.com</u></h3>
+        </div>
+        <div class="contact_con">
+            <form method="post" action="contact-form-process.php" id="fcf_form_id" class="form_class">
+                <div class="name">
+                    <!-- first name -->
+                    <div class="submit_form">
+                        <label for="First_name">First Name*</label>
+                        <input id="First_name"  type="text" name="First_name" required>
+                    </div>
+
+                    <!-- last name -->
+                    <div class="submit_form">
+                        <label for="Last_name">Last Name*</label>
+                        <input id="Last_name"  type="text" name="Last_name" required>
+                    </div>
+                </div>
+                    <!-- email input -->
+                    <div class="submit_form">
+                        <label for="Email">Email*</label>
+                        <input id="Email" type="text" name="Email" required>
+                    </div>
+
+                    <!-- subject input -->
+                    <div class="submit_form">
+                        <label for="Subject">Subject*</label>
+                        <input id="Subject" type="text" name="Subject" required>
+                    </div>
+
+                    <!-- message input -->
+                    <div class="submit_form">
+                        <label for="Message">Message*</label>
+                        <textarea name="Message" id="Message" cols="60" rows="5"></textarea>
+                    </div>
+
+                    <!-- submit button -->
+                    <div class="submit">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+   </article>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_con">
+            <div class="link_icons">
+                <a href="https://www.instagram.com/joelguptill/" class="icon_link"><img src="./Resources/Photos/Instagram Logo White.png" alt="Instagram icon" class="icon"></a>
+                <a href="https://www.facebook.com/JoelGuptillMusic" class="icon_link"><img src="./Resources/Photos/Facbook Logo White.png" alt="Facebook Logo" class="icon"></a>
+                <a href="https://open.spotify.com/artist/6IRfHVFLtWhQLsbFCLcnCJ?si=wdebKppLQwCASJ20BoI85g" class="icon_link"><img src="./Resources/Photos/Spotify Logo White.png" alt="Spotify Logo" class="icon"></a>
+                <a href="https://music.apple.com/us/artist/joel-guptill/1438362234" class="icon_link"><img src="./Resources/Photos/Apple music Logo.png" alt="Apple Music Logo" class="icon"></a>
+                <a href="https://www.youtube.com/channel/UCXTOQ0zJETdjyOA6Rbv3xPg?app=desktop" class="icon_link"><img src="./Resources/Photos/Youtube Logo White.png" alt="Youtube Logo" class="icon"></a>
+            </div>
+        </div>
+    </footer>
+
     
 </body>
 </html>

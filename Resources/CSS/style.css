@@ -5,7 +5,6 @@
 html {
     font-family: sans-serif;
     height: 100%;
-   
 }
 
 body {
@@ -17,6 +16,8 @@ body {
 h2 {
     font-size: 2rem;
 }
+
+
 
 
 
@@ -36,7 +37,7 @@ header {
     position: fixed;
     top: 0;
     resize: both;
-    z-index: 2;
+    z-index: 999;
 }
 
 .navbar_container {
@@ -54,26 +55,37 @@ header {
     padding: 0;
     margin-left: 1.5rem;
     flex-shrink: 1;
+    font-size: 13px;
 }
 
 .link, .nav_links {
-    padding: 5px 7px;
+    padding: 5px 5px;
     text-decoration: none;
     list-style: none;
     color: white;
-
-
 }
 
-.navbar h1 {
-    flex-shrink: 1;
-    position: relative;
-    right: 4rem;
+.navbar_container a.icon{
+    display: none;
+}
+
+.link_list, .link_icons {
+    display: hidden;
 }
 
 .joel {
     color: white;
     text-decoration: none;
+    position: relative;
+    right: 6rem;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+.menu_icon {
+    display: none;
 }
 
 .link_icons {
@@ -97,6 +109,7 @@ header {
     transition: background-color 200ms linear;
 }
 
+
 /* Main */
 main{
     padding-top: 4.25rem;
@@ -111,7 +124,8 @@ main{
     background-repeat: no-repeat;
     padding: 0;
     color: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
     opacity: 0.95;
     text-align: center;
     
@@ -237,11 +251,13 @@ button:hover {
     width: 375px;
     left: 10rem;
     bottom: 2rem;
+
 }
 
 .music_button {
     height: 5rem;
     width: 300px;
+    margin: 1rem 5px;
 }
 
 /* contact banner on index */
@@ -289,8 +305,6 @@ button:hover {
 }
 
 
-
-
 /* EPK SlideShow */
 .epk_banner {
     background-image: url('/Resources/Photos/JoelConcert.JPG');
@@ -309,7 +323,7 @@ button:hover {
 
 .bio_con {
     height: 640px;
-    width: 900px;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,22 +332,780 @@ button:hover {
     font-size: 1.75rem;
 }
 
-.slideshow_con {
-    background-color: black;
-    height: 700px;
+.videos_wrapper {
+    height: 750px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    background-color: black;
     color: white;
+}
+
+.videos_con {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-
-
-.slide_con {
-    height: 500px;
+.carousel_con {
+    width: 600px;
+    height: 400px; 
+    display: flex;
+    align-items: center;
     overflow: hidden;
-    
+    overflow-x: scroll; 
+}
+
+.button_carousel {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_carousel button {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.arrow_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 600px;
+    height: 400px;
+}
+
+.items_con {
+    height: 75px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.items_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 600px;
+}
+
+.video_item {
+    height: 75px;
+    width: 150px;
+    opacity: .5;
+    margin: 0 20px;
+}
+
+.video {
+    width: 600px;
+    height: 400px;
+}
+
+.video_anc {
+    color: white;
+    text-decoration: none;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile_videos {
+    display: none;
+}
+
+.video_item:hover {
+    opacity: 1;
+    transition: all 200ms linear;
+}
+
+.photos_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 850px;
+}
+
+.photo_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 559px;
+}
+
+.photo_col_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.photo_col_2 {
+    margin: 0 10px
+}
+
+.photo_button {
+    width: 300px;
+    font-size: larger;
 }
 
 
+/* music */
+.music_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* showtimes */
+.showtime_con {
+    height: 544px
+}
+.showtimes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+/* contact */
+.contact_wrapper {
+    height: 700px;
+    margin: 0;
+    display: block;
+    position: relative;
+    top: 4.25rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.contact_con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form_class {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: flex;
+    
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    background-color: #fafafa;
+    border: black solid .5px;
+}
+
+textarea {
+    background-color: #fafafa;
+}
+
+.submit_form {
+    margin: 12px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    align-self: center;
+}
+
+
+/* mobile resizing */
+@media only screen and (max-width: 480px) {
+
+    /* Navbar */
+     .navbar_container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center; 
+         align-items:center ; 
+     }
+ 
+     .link_con {
+         display: none;
+     }
+ 
+     #mobile_menu {
+         position: relative;
+         top: 7rem;
+         padding-bottom: 1rem;
+         background-color: black;
+         width: 100%;
+     }
+ 
+     .link_list {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         line-height: 2rem;
+         font-size: 1.2rem;
+         margin: 0;
+ 
+     }
+ 
+     .link_icons {
+         display: flex;
+         justify-content: center;
+         margin-top: 2rem;
+     }
+ 
+     .joel {
+        position: unset;
+     }
+ 
+     #mobile_menu .joel {
+         display: flex;
+         justify-content: center;
+     }
+ 
+ 
+     .navbar_container a.menu_icon {
+         display: block;
+         color: white;
+         position: absolute;
+         left: 0;
+         margin-left: 1rem;
+         width: 1rem;
+         height: 1rem;
+     }
+
+     /* index banner */
+     
+     .banner_container {
+        background-size: cover;
+        background-position: -15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+     }
+
+     .banner_container h2 {
+        position: unset;
+        font-size: 3rem;
+     }
+
+    .banner_container p {
+        display: none;
+    }
+
+    /* index about banner */
+
+    .index_about_con {
+       justify-content: center;  
+    }
+
+    .index_about_text {
+        position: unset;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.377);
+        padding: .5rem 1rem
+    }
+
+    /* index epk banner */
+
+    .index_epk_banner {
+        display: flex;
+        justify-content: center;
+        background-position: -35rem;
+    }
+
+     .index_epk_con {
+        position: unset;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+     /* index music banner */
+
+     .index_music_con {
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: -7rem;
+        min-height: 760px;
+        
+     }
+
+     .music_con {
+        position: unset;
+        width: 300px;
+     }
+
+     /* contact banner */
+     .index_contact_con {
+        background-size: cover;
+        background-position: unset;
+        background-position-x: -15rem;  
+        display: flex;
+        justify-content: center;
+     }
+
+     .con_text {
+        margin: 0;
+        position: relative;
+        top: 6rem
+     }
+
+     .con_text p, .con_text h3, .con_text hr {
+        display: none;
+     }
+
+     /* epk */
+    .epk_banner {
+        width: 100%;
+        background-position: -20rem;
+    }
+
+    .bio_con {
+        height: 850px;
+        width: 100%;
+    }
+
+     .bio_text {
+        width: 330px;
+        height: 800px;
+     }
+
+     .bio_text {
+        margin: 0;
+     }
+
+     .videos_wrapper {
+        height: 1200px
+     }
+
+     .videos_con {
+        width: 420px;
+     }
+
+     .items_con, .videos_con {
+        display: none;
+       
+     }
+
+     .mobile_videos {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1000px;
+     }
+
+     .video {
+        width: 325px;
+        height: 200px;
+     }
+
+     .photos_con {
+        height: 1870px;
+        margin-top: 1rem;
+     }
+
+     .photos_con h2 {
+        margin: 2rem auto;
+     }
+
+     .photo_col {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 1600px;  
+     } 
+
+     .photo_col_1 {
+        justify-content: center;
+        margin: 0;
+        height: 530px;
+     }
+
+     .photo_col_2 {
+        margin-bottom: 2rem;
+     }
+
+     .photo {
+        margin-bottom: 1rem;
+        
+     }
+
+     /* music */
+     .music_con h3 {
+        margin: 50px auto;
+     }
+
+     .music_button {
+        margin: 7px auto;
+     }
+
+     .music_buttons {
+        display: flex;
+        flex-direction: column;
+     }
+
+     /* shows */
+     .showtime_con {
+        min-height: 760px;
+     }
+
+     /* contact */
+     .contact_wrapper {
+        min-height: 830px;
+     }
+
+     .contact_con {
+        width: 400px;
+     }
+
+     input, label, textarea{
+        width: 100%;
+     }
+
+ }
+
+
+ /* tablet resizing */
+
+ @media only screen and (max-width: 800px) and (min-width: 482px) {
+   
+    /* navBar */
+    .navbar_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items:center ; 
+    }
+
+    .link_con {
+        display: none;
+    }
+
+    #mobile_menu {
+        position: relative;
+        top: 7rem;
+        padding-bottom: 1rem;
+        background-color: black;
+        width: 100%;
+    }
+
+    .link_list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        margin: 0;
+
+    }
+
+    .link_icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .joel {
+       position: unset;
+    }
+
+    #mobile_menu .joel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar_container a.menu_icon {
+        display: block;
+        color: white;
+        position: absolute;
+        left: 0;
+        margin-left: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    /* Index */
+
+    /* banner */
+    .banner_container {
+        justify-content: center;
+        align-items: flex-start;
+        background-position-x: -15rem;
+    }
+    .banner_container h2, .banner_container p {
+        position: unset;
+        width: 350px;
+        margin-left: 1.5rem;
+    }
+
+    /* about Index */
+    .index_about_con {
+        background-position-x: -14rem;
+        background-size: 75rem;
+    }
+
+    .index_about_text {
+        position: unset;
+        width: 375px;
+        margin-right: 1rem;
+    }
+
+    /* epk index */
+    .index_epk_banner {
+        background-position-x: -19rem ;
+    }
+
+    .index_epk_con {
+        position: unset;
+        margin-left: 3rem;
+    }
+
+    /* music index */
+    .index_music_con {
+        background-size: 200%;
+        background-position-x: -12rem;
+        min-height: 875px;
+    }
+
+    .music_con {
+        position: unset;
+        margin-left: 4rem;
+    }
+
+    /* contact index */
+    .index_contact_con {
+        background-size: 150%;
+        background-position-x: -24rem ;
+    }
+
+    .con_text {
+       margin: auto 4rem;
+    }
+
+
+    /* epk */
+    .button_carousel {
+        width: 100%
+    }
+
+    .photos_con {
+        height: 1400px
+    }
+
+    .photo_col {
+        flex-direction: column;
+        width: 100%;
+        height: 1100px;
+    }
+
+    .photo_col_1 {
+        flex-direction: row;
+        height: 275px;
+        margin-bottom: 15px;
+    }
+    
+    .photo {
+        margin: auto 7.5px;
+    }
+
+    /* music */
+    .music_buttons {
+        flex-direction: column;
+    }
+
+    /* showtimes */ 
+    .showtime_con {
+        min-height: 875px;
+    }
+
+    /* contact */
+    .contact_wrapper {
+        min-height: 945px;
+    }
+ }
+
+ /* tablet landscape resizing */
+ @media only screen and (max-width: 1024px) and (min-width: 805px) {
+   
+    /* Navbar */
+    .navbar_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items:center ; 
+    }
+
+    .link_con {
+        display: none;
+    }
+
+    #mobile_menu {
+        position: relative;
+        top: 7rem;
+        padding-bottom: 1rem;
+        background-color: black;
+        width: 100%;
+    }
+
+    .link_list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        margin: 0;
+
+    }
+
+    .link_icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .joel {
+       position: unset;
+    }
+
+    #mobile_menu .joel {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .navbar_container a.menu_icon {
+        display: block;
+        color: white;
+        position: absolute;
+        left: 0;
+        margin-left: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    /* index */
+
+    /* banner */
+    .banner_container {
+        background-position-x: -5rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .banner_container h2, .banner_container p {
+        position: unset;
+        margin-left: 12rem;
+        width: 350px;
+    }
+
+    /* about index */
+    .index_about_con {
+        background-position: -12rem;
+        background-size: 125%;
+    }
+
+    .index_about_text {
+        position: unset;
+        margin-right: 5rem;
+    }
+
+    /* epk index */
+    .index_epk_banner  {
+        background-position-x: -14rem;
+    }
+
+    /* music index */
+    .index_music_con {
+        background-size: 210%;
+        background-position-x: -16rem;
+        min-height: 1215px;
+    }
+
+    .music_con {
+        position: unset;
+        margin-left: 5rem;
+        width: 450px;
+        height: 1000px;
+    }
+
+    .music_con iframe {
+        height: 500px;
+    }
+
+    /* contact index */
+    .index_contact_con {
+        background-size: 150%;
+        background-position-x: -23rem;
+    }
+
+    .con_text {
+        margin: auto 2.5rem;
+    }
+
+    /* epk */
+    .photos_con {
+        height: 1350px;
+    }
+
+    .photo_col {
+        height: 1100px;
+        flex-direction: column;
+    }
+
+    .photo_col_1 {
+        flex-direction: row;
+        width: 770px;
+    }
+    
+    /* music */
+    .music_buttons {
+        flex-direction: column;
+    }
+
+    /* showtimes */
+    .showtime_con {
+        min-height: 1215px;
+    }
+
+    /* contact */
+    .contact_wrapper {
+        min-height: 1280px;
+    }
+ }
+
+
+
+
+  
+ 

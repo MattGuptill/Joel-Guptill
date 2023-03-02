@@ -1,17 +1,28 @@
-let slideIndex = 1;
-showDivs(slideIndex);
+// controls the carousel in epk
+const carousel_con = document.getElementById("carousel_con");
+const item = document.querySelector(".item");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+nextButton.addEventListener("click", () => {
+  const slideWidth = item.clientWidth;
+  carousel_con.scrollLeft += slideWidth;
+});
 
-function showDivs(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+prevButton.addEventListener("click", () => {
+  const slideWidth = item.clientWidth;
+  carousel_con.scrollLeft -= slideWidth;
+});
+
+//mobile menu
+function myFunction() {
+    let x = document.getElementById("mobile_menu");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+      
+    }
+
+    
   }
-  x[slideIndex-1].style.display = "block";
-}
