@@ -69,46 +69,72 @@
             <h2>Contact</h2>
             <h3>Email me at <u>joelguptillmusic@gmail.com</u></h3>
         </div>
-        <div class="contact_con">
+        <!-- <div class="contact_con">
             <form method="POST" action="https://formspree.io/f/xqkolajk" class="form_class">
                 <div class="name">
-                    <!-- first name -->
+                    first name
                     <div class="submit_form">
                         <label for="First_name">First Name*</label>
                         <input id="First_name"  type="text" name="First_name" required>
                     </div>
 
-                    <!-- last name -->
+                    last name
                     <div class="submit_form">
                         <label for="Last_name">Last Name*</label>
                         <input id="Last_name"  type="text" name="Last_name" required>
                     </div>
                 </div>
-                    <!-- email input -->
+                    email input
                     <div class="submit_form">
                         <label for="Email">Email*</label>
                         <input id="Email" type="email" name="Email" required>
                     </div>
 
-                    <!-- subject input -->
+                    subject input
                     <div class="submit_form">
                         <label for="Subject">Subject*</label>
                         <input id="Subject" type="text" name="Subject" required>
                     </div>
 
-                    <!-- message input -->
+                    message input
                     <div class="submit_form">
                         <label for="Message">Message*</label>
                         <textarea name="Message" id="Message" cols="60" rows="5"></textarea>
                     </div>
 
-                    <!-- submit button -->
+                    submit button
                     <div class="submit">
                     <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
                     </div>
                 </div>
             </form>
-        </div>
+        </div> -->
+
+
+        <div class="contact-form">
+        <form
+            action="https://formspree.io/f/xqkolajk"
+            method="POST"
+            >
+        <label class="submit_form">
+            Full Name:
+            <input type="text" name="full-name">
+        </label>
+        <label class="submit_form">
+            Your email:
+            <input type="email" name="email">
+        </label>
+        <label class="submit_form">
+            Your message:
+            <textarea cols="60" rows="5" name="message"></textarea>
+        </label>
+        <!-- your other form fields go here --> 
+        <button class="submit" type="submit">Send</button>
+        </form>
+    </div>
+
+
+       
    </article>
 
     <!-- footer -->
