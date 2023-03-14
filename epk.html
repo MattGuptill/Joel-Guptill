@@ -19,7 +19,7 @@
                     <ul class="link_list">
                         <li class="link"><a href="./index.html" class="nav_links">HOME</a></li>
                         <li class="link"><a href="./epk.html" class="nav_links"><u>EPK</u></a></li>
-                        <li class="link"><a href="./music.html" class="nav_links">MUSIC</a></li>
+                        <li class="link"><a href="./music.html" class="nav_links">LISTEN</a></li>
                         <li class="link"><a href="./shows.html" class="nav_links">SHOWS</a></li>
                         <li class="link"><a href="./contact.html" class="nav_links">CONTACT</a></li>
                     </ul>
@@ -34,7 +34,7 @@
                     <ul class="link_list">
                         <li class="link"><a href="./index.html" class="nav_links">HOME</a></li>
                         <li class="link"><a href="./epk.html" class="nav_links"><u>EPK</u></a></li>
-                        <li class="link"><a href="./music.html" class="nav_links">MUSIC</a></li>
+                        <li class="link"><a href="./music.html" class="nav_links">LISTEN</a></li>
                         <li class="link"><a href="./shows.html" class="nav_links">SHOWS</a></li>
                         <li class="link"><a href="./contact.html" class="nav_links">CONTACT</a></li>
                     </ul>
@@ -74,7 +74,7 @@
     
         <div class="bio_con">
             <div class="bio_text">
-                <h2>Bio//</h2>
+                <h2>Bio</h2>
                 <hr>
                 <p>Canadian singer/songwriter, Joel Guptill, is a Nashville-based artist 
                     whose heartfelt lyrics, refreshing melodies, and engaging performances
@@ -95,17 +95,15 @@
                     <button class="arrow_button" id="slide-arrow-prev" onclick="plusDivs(-1)">&#10094;</button>
 
                     <div class="carousel_con" id="carousel_con">
-
-                        <div class="item" id="item1">
-                            <iframe class="video"  src="https://www.youtube.com/embed/tJ1v57W60zY" 
+                        <div class="item" id="item2">
+                            <iframe class="video"  src="https://www.youtube.com/embed/yIpvCqcHng4" 
                                 title="YouTube video player" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
-                            </iframe>
-                        </div>
-
-                        <div class="item" id="item2">
-                            <iframe class="video"  src="https://www.youtube.com/embed/yIpvCqcHng4" 
+                                </iframe>
+                                </div>
+                        <div class="item" id="item1">
+                            <iframe class="video"  src="https://www.youtube.com/embed/tJ1v57W60zY" 
                                 title="YouTube video player" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
@@ -135,14 +133,14 @@
                 </div>
 
                 <div class="items_con">
-                    
+                        <a  class="video_anc" href="#item2">
+                                <p>Fall</p>
+                                <img src="/Resources/Photos/FallJPG.jpeg" alt="Joel singing on stage" class="video_item">
+                        </a>
+
                         <a class="video_anc" href="#item1">
                             <p>Dangerous Girl</p>
                             <img src="/Resources/Photos/joelVideoJPG1.jpeg" alt="Joel singin on stage" class="video_item">
-                        </a>
-                        <a  class="video_anc" href="#item2">
-                            <p>Fall</p>
-                            <img src="/Resources/Photos/FallJPG.jpeg" alt="Joel singing on stage" class="video_item">
                         </a>
                     
                         <a class="video_anc" href="#item3">
@@ -207,6 +205,38 @@
             <a href="https://www.dropbox.com/sh/fvfliamy9yf2lin/AACMNnyX8x7tTsmktHCJ95ZKa?dl=0" class="button_link" target="_blank"><button class="photo_button">Download Press Photos</button></a>
         </div>
     </main>
+
+    <div class="epk-banner-bottom">
+    </div>
+
+    <div class="epk-contact">
+        <div class="contact">
+            <h2>Contact</h2>
+            <h3>Email me at <u>joelguptillmusic@gmail.com</u></h3>
+        </div>
+
+        <div class="contact-form">
+            <form
+                action="https://formspree.io/f/xqkolajk"
+                method="POST"
+                >
+            <label class="submit_form">
+                Full Name:
+                <input type="text" name="full-name">
+            </label>
+            <label class="submit_form">
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label class="submit_form">
+                Your message:
+                <textarea cols="60" rows="5" name="message"></textarea>
+            </label>
+            <!-- your other form fields go here --> 
+            <button class="submit" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer>

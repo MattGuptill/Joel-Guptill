@@ -9,8 +9,9 @@ html {
 
 body {
     margin: 0;
-    max-width: 1800px;
+    max-width: 1600px;
     background-color: white;
+    height: 100%;
 }
 
 h2 {
@@ -77,7 +78,7 @@ header {
     color: white;
     text-decoration: none;
     position: relative;
-    right: 6rem;
+    right: 3rem;
 }
 
 #mobile_menu {
@@ -119,9 +120,11 @@ main{
 
 .banner_container {
     width: 100%;
-    height: 640px;
+    height: 900px;
     background-image: url('https://images.squarespace-cdn.com/content/v1/61ff0a13023f7d5024581c3e/4d955cbb-79ac-4df4-b345-c0f3376235d8/IMG_1568.JPG');
     background-repeat: no-repeat;
+    background-position-x: -5rem;
+    background-size: 107%;
     padding: 0;
     color: white;
     display: flex;
@@ -158,14 +161,11 @@ main{
 /* about banner on main page */
 .index_about_con {
     display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    height: 640px;
+    justify-content:center;
+    align-items: space-between;
+    height: 1100px;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('/Resources/Photos/joelHoldingGuitar.JPG');
-    color: white;
+    color: black;
     margin: 0;
     padding: 0;
     opacity: 0.95;
@@ -173,10 +173,10 @@ main{
 
 .index_about_text {
     text-align: center;
-    width: 400px;
+    width: 700px;
     position: relative;
-    right: 8rem;
-    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 4rem;
 }
 
 .index_about_text h3 {
@@ -190,7 +190,7 @@ main{
 /* EPK banner on main page */
 .index_epk_banner {
     background-image: url('/Resources/Photos/JoelConcert.JPG');
-    height: 640px;
+    height: 800px;
     margin: 0;
     display: flex;
     justify-content:flex-start;
@@ -215,29 +215,28 @@ button {
     width: 12rem;
     height: 4rem;
     margin-top: 1.5rem;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     cursor: pointer;
     color: white;
+    border: none;
 }
 
-button:hover {
-    color: black;
-    background-color: white;
+.music_button:hover {
+    /* color: black; */
+    background-color: #727272;
     border: black solid 1px;
-    transition: color 400ms linear;
-    transition: background-color 400ms linear;
+    transition: background-color 200ms linear;
 }
 
 /* music banner on index */
 .index_music_con {
-    height: 640px;
     display: flex;
     background-image: url('/Resources/Photos/joelOnStage.jpeg');
-    background-size: 120%;
+    background-size: 130%;
     background-position-x: 8rem;
     background-position-y: -6rem;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     color: white;
     opacity: 0.95;
     font-size: 3rem;
@@ -245,19 +244,25 @@ button:hover {
     
 }
 
+.index_music_con iframe {
+    width: 600px;
+    height: 650px;
+}
+
 .music_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     line-height: .75rem;
     width: 375px;
-    left: 10rem;
-    bottom: 2rem;
-
 }
 
 .music_button {
     height: 5rem;
     width: 300px;
-    margin: 1rem 5px;
+    margin: 3rem 5px;
 }
 
 /* contact banner on index */
@@ -312,7 +317,7 @@ button:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 640px;
+    height: 700px;
     color: white;
 }
 
@@ -322,14 +327,15 @@ button:hover {
 }
 
 .bio_con {
-    height: 640px;
-    width: 90%;
+    height: 800px;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
     font-size: 1.75rem;
+    line-height: 4rem;
 }
 
 .videos_wrapper {
@@ -465,8 +471,26 @@ button:hover {
     font-size: larger;
 }
 
+.epk-banner-bottom {
+    background-image: url(/Resources/Photos/joelOnStage.jpeg);
+    height: 600px;
+    background-size: 100%;
+    margin: 2rem auto;
+}
+
+.epk-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
 
 /* music */
+.music-wrapper {
+    height: 100%;
+}
+
 .music_buttons {
     display: flex;
     align-items: center;
@@ -474,14 +498,20 @@ button:hover {
 }
 
 /* showtimes */
+.showtime-wrapper {
+    height: 100%;
+}
+
 .showtime_con {
-    height: 544px
+    height: 544px;
+    
 }
 .showtimes {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
+   
 }
 
 /* contact */
@@ -493,7 +523,7 @@ button:hover {
     align-items: center;
     position: relative;
     top: 4.25rem;
-
+    min-height: 100%;
 }
 
 .contact {
