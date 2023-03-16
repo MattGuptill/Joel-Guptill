@@ -120,11 +120,11 @@ main{
 
 .banner_container {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     background-image: url('https://images.squarespace-cdn.com/content/v1/61ff0a13023f7d5024581c3e/4d955cbb-79ac-4df4-b345-c0f3376235d8/IMG_1568.JPG');
     background-repeat: no-repeat;
     background-position-x: -5rem;
-    background-size: 107%;
+    background-size: 115%;
     padding: 0;
     color: white;
     display: flex;
@@ -190,7 +190,7 @@ main{
 /* EPK banner on main page */
 .index_epk_banner {
     background-image: url('/Resources/Photos/JoelConcert.JPG');
-    height: 800px;
+    height: 100px;
     margin: 0;
     display: flex;
     justify-content:flex-start;
@@ -317,7 +317,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 700px;
+    height: 900px;
     color: white;
 }
 
@@ -473,7 +473,7 @@ button {
 
 .epk-banner-bottom {
     background-image: url(/Resources/Photos/joelOnStage.jpeg);
-    height: 600px;
+    height: 800px;
     background-size: 100%;
     margin: 2rem auto;
 }
@@ -643,7 +643,8 @@ textarea {
      
      .banner_container {
         background-size: cover;
-        background-position: -15rem;
+        background-position: -20rem;
+        height: 650px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -652,7 +653,7 @@ textarea {
 
      .banner_container h2 {
         position: unset;
-        font-size: 3rem;
+        font-size: 2rem;
      }
 
     .banner_container p {
@@ -662,14 +663,20 @@ textarea {
     /* index about banner */
 
     .index_about_con {
-       justify-content: center;  
+       justify-content: center; 
+       height: 100%; 
+    }
+
+    .index_about_con h3 {
+        font-size: 2rem;
     }
 
     .index_about_text {
         position: unset;
         width: 300px;
-        background-color: rgba(0, 0, 0, 0.377);
-        padding: .5rem 1rem
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
     /* index epk banner */
@@ -731,18 +738,18 @@ textarea {
     }
 
     .bio_con {
-        height: 900px;
+        height: 100%;
         width: 100%;
     }
 
      .bio_text {
         width: 330px;
         height: 800px;
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
      }
 
-     .bio_text {
-        margin: 0;
-     }
 
      .videos_wrapper {
         height: 1200px
@@ -801,18 +808,30 @@ textarea {
         
      }
 
+     .epk-banner-bottom {
+        height: 250px;
+        margin-top: 5rem;
+     }
+
      /* music */
+     .music_con iframe {
+        width: 95%;
+        height: 400px;
+     }
+
      .music_con h3 {
         margin: 50px auto;
      }
 
      .music_button {
         margin: 7px auto;
+        width: 200px;
      }
 
      .music_buttons {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
      }
 
      /* shows */
