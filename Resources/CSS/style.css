@@ -483,6 +483,7 @@ button {
     flex-direction: column;
     align-items: center;
     height: 600px;
+    
 }
 
 
@@ -531,14 +532,14 @@ button {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    /* width: 85%; */
 }
 
 .contact_con {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 85%;
 }
 
 .contact-form {
@@ -547,6 +548,7 @@ button {
     width: 600px;
     align-items: center;
     justify-content: center;
+    width: 85%
 }
 
 .form_class {
@@ -734,7 +736,7 @@ textarea {
      /* epk */
     .epk_banner {
         width: 100%;
-        background-position: -20rem;
+        background-position-x: -37rem;
     }
 
     .bio_con {
@@ -789,8 +791,9 @@ textarea {
      .photo_col {
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 95%;
         height: 1600px;  
+        overflow: hidden;
      } 
 
      .photo_col_1 {
@@ -812,6 +815,8 @@ textarea {
         height: 250px;
         margin-top: 5rem;
      }
+
+    
 
      /* music */
      .music_con iframe {
@@ -842,10 +847,11 @@ textarea {
      /* contact */
      .contact_wrapper {
         min-height: 830px;
+        
      }
 
-     .contact-form {
-        width: 350px;
+     .submit_form {
+        margin: 0;
      }
 
      input, label, textarea{
