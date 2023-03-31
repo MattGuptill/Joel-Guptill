@@ -645,7 +645,7 @@ textarea {
      
      .banner_container {
         background-size: cover;
-        background-position: -20rem;
+        background-position: -22rem;
         height: 650px;
         display: flex;
         flex-direction: column;
@@ -819,6 +819,10 @@ textarea {
     
 
      /* music */
+     .index_music_con {
+        background-position-x: -16rem;
+     }
+
      .music_con iframe {
         width: 95%;
         height: 400px;
